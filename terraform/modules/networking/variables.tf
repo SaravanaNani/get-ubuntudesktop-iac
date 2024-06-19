@@ -1,6 +1,6 @@
 variable "project_id" {
 type = string
-default = "sumanth-97"
+default = "saravana95"
 }
 
 variable "jenkins-server_region" {
