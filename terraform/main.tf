@@ -1,10 +1,10 @@
 provider "google" {
-  project     = "sumanth-97"
+  project     = "saravana95"
 }
 
 terraform {
   backend "gcs" {
-    bucket  = "sumanth-state-backup-bucket"
+    bucket  = "saravana-desk-state-backup-bucket"
     prefix  = "terraform-infra/state"
   }
 }
