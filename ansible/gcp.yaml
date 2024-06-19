@@ -1,7 +1,7 @@
 ---
 plugin: gcp_compute
 projects:
-  - sumanth-97
+  - saravana95
 auth_kind: serviceaccount
 service_account_file: /var/lib/jenkins/workspace/desktop/ansible/service-account.json
 groups:
