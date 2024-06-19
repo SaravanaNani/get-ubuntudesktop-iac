@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/bpurnachander/get-ubuntudesktop-iac.git'
+                git branch: 'main', url: 'https://github.com/SaravanaNani/get-ubuntudesktop-iac.git'
             }
         }
         stage('tfm-init') {
