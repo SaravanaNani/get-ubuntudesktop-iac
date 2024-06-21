@@ -1,4 +1,3 @@
----
 #plugin: gcp_compute
 #projects:
  # - saravana95
@@ -9,7 +8,7 @@
   # tomcat: "'tomcat' in name"
 #  apache2: "'apache2' in name"
 
-
+---
 plugin: gcp_compute
 projects:
   - saravana95
