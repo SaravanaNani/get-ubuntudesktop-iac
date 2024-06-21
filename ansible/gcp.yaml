@@ -1,11 +1,22 @@
 ---
+#plugin: gcp_compute
+#projects:
+ # - saravana95
+#auth_kind: serviceaccount
+#service_account_file: /var/lib/jenkins/workspace/desktop/ansible/service-account.json
+#groups:
+#  jenkins: "'jenkins' in name"
+  # tomcat: "'tomcat' in name"
+#  apache2: "'apache2' in name"
+
+
 plugin: gcp_compute
 projects:
   - saravana95
 auth_kind: serviceaccount
 service_account_file: /var/lib/jenkins/workspace/desktop/ansible/service-account.json
+keyed_groups:
+  - key: labels.desktop
+    prefix: target_hosts
 groups:
-  jenkins: "'jenkins' in name"
-  desktop: "'desktop' in name"
-  tomcat: "'tomcat' in name"
-  apache2: "'apache2' in name"
+  target_hosts: "'desktop' in labels.desktop"
